@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        @font-face {
+            font-family: 'Monday' ; /*criar nome para a família de fontes*/
+            src: url('fonts/monday miracle.otf') format('opentype'); /*url é o nome do arquivo igual || format*/
+            font-weight: normal; /*só para indicar que funciona melhor no normal*/
+            font-style: normal;
+        }
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        h1{
+            font-family: 'Monday', Times, serif;
+            font-size: 3em;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus ipsa, officiis laudantium aut dolorum voluptas obcaecati necessitatibus optio ut assumenda magnam omnis? Numquam, hic! Atque fugiat repudiandae ullam harum consequatur!</p>
+</body>
+</html>
