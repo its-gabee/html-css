@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox II</title>
+    <style>
+        .container{
+            /* width: 400px; */
+            height: 540px;
+            background-color: bisque;
+            font-weight: bolder;
+            padding: 20px;
+            display: flex; /*inicializa o flexbox*/
+            flex-direction: row; /*definir o eixo principal*/
+            justify-content: center; /*alinhamento horizontal*/
+            align-items: center; /*alinhamento vertical*/
+            align-content: center; /*alinhar mais de uma linha*/
+            flex-wrap: nowrap; /*quebra de linha*/
+            gap: 10px 30px; /*espaçamento entre LINHAS, COLUNAS*/
+        }
+
+        .bloco-1{
+            order: 0;
+            /* flex-grow: 0;
+            flex-shrink: 1;
+            flex-basis: auto;*/
+            flex: 0 1 auto;
+            align-self: flex-start;
+            background-color: #8a2be2;
+        }
+        .bloco-2{
+            order: 0;
+            /* flex-grow: 0;
+            flex-shrink: 1;
+            flex-basis: auto;*/
+            flex: 0 1 auto;
+            align-self: flex-end;
+            background-color: #2bd6e2f8;
+        }
+        .bloco-3{
+            order: 0;
+            /* flex-grow: 0;
+            flex-shrink: 1;
+            flex-basis: auto;*/
+            flex: 0 1 auto; /*shorthand para tudo acima*/
+            align-self: center;
+            background-color: rgb(50, 215, 53);
+        }
+
+        .bloco-1, .bloco-2, .bloco-3{
+            height: 150px;
+            width: 150px;
+            text-align: center;
+            font-size: 40px;
+            border-radius: 16px;
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <div class="bloco-1">1</div>
+        <div class="bloco-2">2</div>
+        <div class="bloco-3">3</div>
+        <!-- <div class="bloco-1">4</div>
+        <div class="bloco-2">5</div>
+        <div class="bloco-3">6</div>
+        <div class="bloco-1">7</div>
+        <div class="bloco-2">8</div>
+        <div class="bloco-3">9</div>
+        <div class="bloco-1">10</div>
+        <div class="bloco-2">11</div>
+        <div class="bloco-3">12</div> -->
+    </main>
+</body>
+</html>
